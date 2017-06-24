@@ -1,0 +1,49 @@
+service: serverless-template
+provider:
+  name: aws
+  runtime: nodejs6.10
+  region: eu-west-2
+functions:
+  index:
+    handler: handler.index
+    timeout: 30
+    events:
+      - http:
+          path: /{type}
+          method: post
+          cors:
+            origins:
+              - '*'
+            headers:
+              - Content-Type
+              - X-Amz-Date
+              - Authorization
+              - X-Api-Key
+              - X-Amz-Security-Token
+              - X-Amz-User-Agent
+            allowCredentials: false
+      - http:
+          path: /{type}
+          method: get
+          cors:
+            origins:
+              - '*'
+            headers:
+              - Content-Type
+              - X-Amz-Date
+              - Authorization
+              - X-Api-Key
+              - X-Amz-Security-Token
+              - X-Amz-User-Agent
+            allowCredentials: false
+plugins:
+  - serverless-plugin-optimize
+  - serverless-offline
+package:
+  individually: true
+custom:
+  serverless-offline:
+    babelOptions:
+      presets: ["es2015", "es2016", "stage-0"]
+  optimize:
+    presets: ['es2015', 'es2016', 'stage-0']

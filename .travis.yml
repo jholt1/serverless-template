@@ -1,0 +1,16 @@
+language: node_js
+node_js:
+  - 6
+sudo: false
+dist: trusty
+cache:
+  directories:
+  - node_modules
+before_install:
+  - git config user.name 'travis-build'
+  - npm install -g serverless
+script:
+  - npm test
+after_success:
+  - if [[ "$TRAVIS_BRANCH" == "master" ]]; then sls deploy --stage production; fi
+  - if [[ "$TRAVIS_BRANCH" == "staging" ]]; then sls deploy --stage dev; fi

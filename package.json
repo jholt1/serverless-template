@@ -1,0 +1,33 @@
+{
+  "name": "serverless-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "handler.js",
+  "scripts": {
+    "babel-node": "babel-node",
+    "test": "mocha --recursive --require babel-polyfill --compilers js:babel-register"
+  },
+  "babel": {
+    "presets": ["latest", "stage-0"]
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.14.0",
+    "babel-cli": "^6.24.1",
+    "babelify": "^7.3.0",
+    "dotenv": "^2.0.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^7.1.1",
+    "babel-polyfill": "^6.23.0",
+    "babel-preset-latest": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "chai": "^3.5.0",
+    "mocha": "^3.3.0",
+    "serverless-eslint-plugin": "^0.1.4",
+    "serverless-offline": "^3.5.7",
+    "serverless-plugin-optimize": "^1.0.0-rc.14",
+    "sinon": "^2.2.0"
+  }
+}
