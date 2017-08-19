@@ -44,6 +44,6 @@ package:
 custom:
   serverless-offline:
     babelOptions:
-      presets: ["es2015", "es2016", "stage-0"]
+      presets: ['latest', 'stage-0']
   optimize:
-    presets: ['es2015', 'es2016', 'stage-0']
+    presets: ['latest', 'stage-0']
