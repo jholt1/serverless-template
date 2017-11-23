@@ -13,21 +13,21 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "axios": "^0.14.0",
-    "babel-cli": "^6.24.1",
-    "babelify": "^7.3.0",
-    "dotenv": "^2.0.0"
+    "axios": "^0.17.1",
+    "babel-cli": "^6.26.0",
+    "babelify": "^8.0.0",
+    "dotenv": "^4.0.0"
   },
   "devDependencies": {
-    "babel-eslint": "^7.1.1",
-    "babel-polyfill": "^6.23.0",
+    "babel-eslint": "^8.0.2",
+    "babel-polyfill": "^6.26.0",
     "babel-preset-latest": "^6.24.1",
     "babel-preset-stage-0": "^6.24.1",
-    "chai": "^3.5.0",
-    "mocha": "^3.3.0",
+    "chai": "^4.1.2",
+    "mocha": "^4.0.1",
     "serverless-eslint-plugin": "^0.1.4",
-    "serverless-offline": "^3.5.7",
-    "serverless-plugin-optimize": "^1.0.0-rc.14",
-    "sinon": "^2.2.0"
+    "serverless-offline": "^3.16.0",
+    "serverless-plugin-optimize": "^3.0.4-rc.1",
+    "sinon": "^4.1.2"
   }
 }
