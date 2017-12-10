@@ -5,7 +5,8 @@
   "main": "handler.js",
   "scripts": {
     "babel-node": "babel-node",
-    "test": "mocha --recursive --require babel-polyfill --compilers js:babel-register"
+    "test": "mocha --recursive --require babel-polyfill --compilers js:babel-register",
+    "offline": "node --inspect ./node_modules/.bin/serverless offline"
   },
   "babel": {
     "presets": ["latest", "stage-0"]
