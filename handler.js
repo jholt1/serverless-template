@@ -14,8 +14,8 @@ const index = (event, context, callback) => {
     statusCode: 200,
     body: JSON.stringify({
       type,
-      input: event,
-    }),
+      input: event
+    })
   };
 
   callback(null, response);
