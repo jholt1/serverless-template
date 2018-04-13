@@ -44,6 +44,6 @@ package:
 custom:
   serverless-offline:
     babelOptions:
-      presets: ['latest', 'stage-0']
+      presets: ['env']
   optimize:
-    presets: ['latest', 'stage-0']
+    presets: ['env']
